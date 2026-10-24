@@ -1,0 +1,168 @@
+[shell]
+corner_radius_scale = 1 # default: 1.0
+screen_time_enabled = true
+app_icon_colorize   = false
+clipboard_history_max_entries = 20
+polkit_agent        = true
+password_style      = "default"
+
+
+[shell.animation]
+enabled = true
+speed   = 0.9
+
+
+[shell.shadow]
+direction   = "down"
+alpha       = 0.8
+
+[shell.panel]
+list_item_background        = false
+launcher_placement          = "attached" # attached | floating
+clipboard_placement         = "attached" # attached | floating
+control_center_placement    = "attached" # attached | floating
+wallpaper_placement         = "attached" # attached | floating
+session_placement           = "attached" # attached | floating
+polkit_placement            = "attached" # attached | floating
+
+# launcher_position        = "center"   # auto | center | top_left | … (floating only)
+# clipboard_position       = "center"   # auto | center | top_left | … (floating only)
+# polkit_position          = "center"   # auto | center | top_left | … (floating only)
+# floating_offset          = 8           # px gap between a floating panel and the bar edge
+
+open_near_click_control_center = true  # attached/floating: follow the bar click instead of bar-center
+open_near_click_launcher       = true  # attached/floating: follow the bar click instead of bar-center
+open_near_click_clipboard      = true  # attached/floating: follow the bar click instead of bar-center
+open_near_click_wallpaper      = true  # attached/floating: follow the bar click instead of bar-center
+open_near_click_session        = true  # attached/floating: follow the bar click instead of bar-center
+
+
+[shell.launcher]
+categories      = true
+show_icons      = true
+compact         = true
+sort_by_usage   = true
+fetch_exchange_rates = true
+provider_prefix = "/"
+
+
+[shell.launcher.providers.calculator]
+prefix  = "calc"
+global  = true
+
+
+[shell.launcher.providers.emoji]
+prefix = "emo"
+
+
+[shell.launcher.providers.session]
+prefix  = "sesh"
+global  = false
+
+
+[shell.launcher.providers.wallpaper]
+prefix  = "wall"
+
+
+[shell.launcher.providers.windows]
+prefix  = "win"
+
+
+[shell.screen_corners]
+enabled = false
+size    = 50
+
+
+[shell.mpris]
+blacklist = []           # optional list of players to hide from media widgets/control-center
+
+
+[shell.screenshot]
+save_to_file    = false
+directory       = "~/Pictures/screencapture"
+copy_to_clipboard = true
+freeze_screen   = true
+confirm_region  = true
+pipe_to_command = true
+pipe_command    = "wl-paste | satty -f -"
+
+
+[[shell.session.actions]]
+action = "lock"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "1"
+variant = "default"
+
+[[shell.session.actions]]
+action = "logout"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "2"
+variant = "default"
+
+[[shell.session.actions]]
+action = "lock_and_suspend"
+countdown_seconds = 3.0
+enabled = true
+shortcut = "3"
+variant = "default"
+
+[[shell.session.actions]]
+action = "reboot"
+countdown_seconds = 3.0
+enabled = true
+shortcut = "4"
+variant = "default"
+
+[[shell.session.actions]]
+action = "shutdown"
+countdown_seconds = 3.0
+enabled = true
+shortcut = "5"
+variant = "destructive"
+
+
+[shell.greeter_sync]
+auto_sync = false
+
+
+[osd]
+position = "top_center"  # top_right | top_left | top_center | bottom_right | bottom_left | bottom_center | center_right | center_left
+position_vertical = "top_center"  # same options; used when orientation = "vertical"
+orientation = "horizontal" # horizontal | vertical (volume/brightness sliders only)
+scale = 1.0              # OSD size multiplier on top of shell.ui_scale
+background_opacity = 0.5 # background opacity of OSD popups
+border = true            # outline around OSD popup cards; set false for a borderless look
+offset_x = 20            # absolute horizontal margin from the screen edge
+offset_y = 8             # absolute vertical margin from the screen edge
+# monitors = ["DP-1"]    # connector names; omit or leave empty for all monitors
+
+
+[osd.kinds]
+volume = true            # master volume OSD toggle
+volume_output = true     # output (speaker) volume; requires volume = true
+volume_input = true      # input (microphone) volume; requires volume = true
+brightness = true        # display brightness
+wifi = true              # Wi-Fi toggle
+bluetooth = true         # Bluetooth toggle
+power_profile = true     # power profile changes
+caffeine = true          # idle inhibitor toggle
+nightlight = true        # night light toggle
+dnd = true               # Do Not Disturb toggle
+lock_keys = true         # Caps/Num/Scroll Lock popups
+keyboard_layout = true   # input keyboard layout changes
+media = true             # MPRIS playback and track changes
+privacy = true           # microphone/camera/screen share capture changes
+keyboard_backlight = true # keyboard backlight level
+
+
+[lockscreen]
+enabled               = true      # master switch for session lock
+fingerprint           = true      # allow fingerprint (PAM) authentication on the lock screen
+allow_empty_password  = false     # submit Enter with an empty password (security-key PAM stacks)
+blurred_desktop       = false     # use a desktop snapshot as the lock screen background
+blur_intensity        = 0.5       # background blur (0.0 = none, 1.0 = maximum)
+tint_intensity        = 0.3       # surface-color tint over the background (0.0 = none, 1.0 = opaque)
+wallpaper             = ""        # optional image path; empty uses the desktop wallpaper per output
+monitors              = []        # connectors that show the lock screen; empty = all outputs, others stay black

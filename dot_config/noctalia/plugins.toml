@@ -1,0 +1,15 @@
+[plugins]
+auto_update = false
+enabled = [ "noctalia/wallhaven", "noctalia/bitwarden" ]
+
+[plugin_settings."noctalia/wallhaven"]
+api_key = "xeEllv94TsNEs8VPXlQZGgMX1bn6Lbvz"
+download_dir = "/home/johannes/Pictures/wallhaven"
+browser_open_near_click = true
+
+[plugin_settings."noctalia/bitwarden"]
+clear_clipboard_seconds = 120
+login_open_near_click = true
+login_placement = "attached"
+server_url = "https://vault.sector18.net"
+unlock_placement = "attached"
