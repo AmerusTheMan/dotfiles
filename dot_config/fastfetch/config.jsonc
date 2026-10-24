@@ -1,0 +1,112 @@
+{
+    "logo": {
+        "type": "small",
+        "height": 15,
+        "width": 30,
+        "padding": {
+            "top": 4,
+            "left": 5
+        }
+    },
+    "display": {
+        "size": {
+            "ndigits": 0
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌──────────────────────Hardware─────────────────────┐"
+        },
+        {
+            "type": "host",
+            "key": "  ›  Computer\t\t",
+            "format": "HP ProBook 440 G8"
+        },
+        {
+            "type": "cpu",
+            "key": "  ›  CPU\t\t",
+            "format": "{code-name}"
+        }, 
+        {
+            "type": "memory",
+            "key": "  ›  RAM\t\t"
+        },
+        {
+            "type": "disk",
+            "key": "  ›  Disk\t\t",
+            "format": "{size-used} / {size-total} ({size-percentage})"
+        },
+        {
+            "type": "battery",
+            "key": "  ›  Battery\t\t",
+            "format": "{capacity} {status} ({time-hours}h {time-minutes}min)"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└───────────────────────────────────────────────────┘"
+        },
+       
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌──────────────────────Software─────────────────────┐"
+        },
+        {
+            "type": "os",
+            "key": "  ›  OS\t\t"
+        },
+        {
+            "type": "kernel",
+            "key": "  ›  Kernel\t\t"
+        },
+        {
+            "type": "packages",
+            "key": "  ›  Packages\t\t",
+            "format" : "{pacman} (Pacman), {flatpak-all} (Flatpak)"
+        },
+           
+        {
+            "type": "wm",
+            "key": "  ›  Window Manager\t"
+        },
+        {
+            "type": "command",
+            "key": "  ›  Desktop Shell\t",
+            "text": "noctalia -v | cut -d '(' -f 1"
+        },
+         
+        {
+            "type": "terminal",
+            "key": "  ›  Terminal\t\t"
+        },
+        {
+            "type": "shell",
+            "key": "  ›  Terminal Shell\t"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└──────────────────────────────────────────────────┘"
+        },
+        
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌─────────────────Uptime / DT──────────────────────┐"
+        },
+        
+        {
+            "type": "uptime",
+            "key": "  ›  Uptime\t\t"
+        },
+        {
+            "type": "datetime",
+            "key": "  ›  DateTime\t\t"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m└──────────────────────────────────────────────────┘"
+        }
+        
+    ]
+}
+
