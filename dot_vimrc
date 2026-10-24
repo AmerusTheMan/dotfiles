@@ -1,0 +1,48 @@
+" --- General Settings ---
+set nocompatible              " Disable vi compatibility mode
+set encoding=utf-8            " Use UTF-8 encoding
+set fileencoding=utf-8        " Save files as UTF-8
+
+" --- Display ---
+set number                    " Show line numbers
+set cursorline                " Highlight the current line
+set showmatch                 " Highlight matching brackets
+set laststatus=2              " Always show the status line
+set ruler                     " Show cursor position in status line
+syntax on                     " Enable syntax highlighting
+set background=dark           " Optimize colors for dark terminals
+let &t_SI = "\e[5 q"          " changes curor to thin line on insert
+let &t_EI = "\e[1 q"          " changes cursor to block on insert end
+
+" --- Tabs and Indentation ---
+set tabstop=4                 " Display tabs as 4 spaces wide
+set shiftwidth=4              " Indent by 4 spaces
+set expandtab                 " Convert tabs to spaces
+set autoindent                " Copy indent from current line on new line
+set smartindent               " Auto-indent after braces and keywords
+
+" --- Search ---
+set hlsearch                  " Highlight search results
+set incsearch                 " Search as you type
+set ignorecase                " Case-insensitive search
+set smartcase                 " Case-sensitive if uppercase used
+
+" --- Mouse and Clipboard ---
+set mouse=a                   " Enable mouse in all modes
+set clipboard=unnamedplus     " Use system clipboard
+
+" --- Performance ---
+set ttyfast                   " Faster terminal redrawing
+set lazyredraw                " Don't redraw during macros
+
+" --- File Handling ---
+set nobackup                  " Don't create backup files
+set noswapfile                " Don't create swap files
+set autoread                  " Reload files changed outside Vim
+
+" --- Wildmenu (command-line completion) ---
+set wildmenu                  " Visual autocomplete for commands
+set wildmode=list:longest     " Complete to longest common string
+
+
+

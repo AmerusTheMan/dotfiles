@@ -1,0 +1,50 @@
+[lockscreen]
+blurred_desktop = false
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" , "lockscreen-widget-clock1"]
+
+[lockscreen_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
+
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+box_height = 103.0
+box_width = 320.0
+cx = 224.0
+cy = 552.5
+output = "eDP-1"
+rotation = 0.0
+type = "login_box"
+
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 7.0
+center_password_text = true
+input_opacity = 1.0
+input_radius = 6.0
+layout = "compact"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = true
+show_media = true
+show_session_buttons = false
+show_weather = false
+
+[lockscreen_widgets.widget.lockscreen-widget-clock1]
+box_height = 112.0
+box_width = 320.0
+cx = 224.0
+cy = 404.0
+output = "eDP-1"
+rotation = 0.0
+type = "clock"
+
+[lockscreen_widgets.widget.lockscreen-widget-clock1.settings]
+background_padding = 0
+background_radius = 12
+clock_style = "digital"
