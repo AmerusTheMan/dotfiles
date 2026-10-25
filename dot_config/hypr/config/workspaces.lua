@@ -1,0 +1,14 @@
+-- Workspace rules wiki https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
+-- Add your workspace rules here. Increment the workspace number as you go. Do not have duplicate workspaces.
+hl.workspace_rule({ workspace = "1", monitor = PRIMARY_MONITOR, default = true, persistent = true })
+hl.workspace_rule({ workspace = "2", monitor = PRIMARY_MONITOR, default = true, persistent = true })
+
+hl.workspace_rule({ workspace = "3", monitor = SECONDARY_MONITOR, default = true, persistent = true })
+hl.workspace_rule({ workspace = "4", monitor = SECONDARY_MONITOR, default = true, persistent = false })
+hl.workspace_rule({ workspace = "5", monitor = SECONDARY_MONITOR, default = true, persistent = false })
+
+
+
+-- Special workspaces
+hl.workspace_rule({ workspace = "name:gaming", monitor = PRIMARY_MONITOR, default = true })
+hl.workspace_rule({ workspace = "name:OBS", monitor = SECONDARY_MONITOR, default = true})
