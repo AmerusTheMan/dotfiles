@@ -10,7 +10,7 @@ edge_smoothness     = 0.3       # 0.0 – 1.0
 transition_on_startup = true   # animate the first wallpaper at shell startup (v4-style)
 
 # Directory browsed by the wallpaper picker panel
-directory           = "{{.wallpaper_path}}"
+directory           = "{{.wallpaper_path | default "/home/{{.chezmoi.username}}/Pictures/wallpapers"}}"
 
 [wallpaper.default]
 path = "/home/{{.chezmoi.username}}/Wallpapers/default.png"
