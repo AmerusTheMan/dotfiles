@@ -1,6 +1,6 @@
 [plugins]
-auto_update = false
-enabled = [ "noctalia/wallhaven", "noctalia/bitwarden" ]
+auto_update = "none"
+enabled = [ "noctalia/wallhaven", "noctalia/bitwarden", "alexander/game-launcher" ]
 
 [plugin_settings."noctalia/wallhaven"]
 api_key = "{{.wallhaven_key}}"
@@ -13,3 +13,9 @@ login_open_near_click = true
 login_placement = "attached"
 server_url = "{{.bitwarden_server_url | default "https://vault.bitwarden.com"}}"
 unlock_placement = "attached"
+
+[plugin_settings."alexander/game-launcher"]
+browser_open_near_click = true
+browser_placement = "attached"
+original_open_near_click = true
+original_placement = "attached"

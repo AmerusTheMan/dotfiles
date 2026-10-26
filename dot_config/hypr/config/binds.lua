@@ -23,6 +23,10 @@ hl.bind(mainMod .. " + Down",  hl.dsp.focus({ direction = "down" }))
 hl.bind("ALT + Tab",           hl.dsp.window.cycle_next())
 hl.bind(mainMod .. " + Tab",   hl.dsp.exec_cmd(noctCall .. "window-switcher"))
 
+-- Change Workspace
+hl.bind(mainMod .. " + CONTROL + RIGHT", hl.dsp.focus({ workspace = "r+1"}))
+hl.bind(mainMod .. " + CONTROL + LEFT",  hl.dsp.focus({ workspace = "r-1"}))
+
 -- Move active window around workspaces & monitors
 hl.bind(mainMod .. " + SHIFT + Up",                   hl.dsp.window.move({ direction = "u" }))
 hl.bind(mainMod .. " + SHIFT + Right",                hl.dsp.window.move({ direction = "r" }))
@@ -119,8 +123,9 @@ hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special" })
 hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special())
 
 
+------------------------
+---- NOCTALIA CALLS ----
+------------------------
 
-
-
-
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(noctCall .. "panel-toggle alexander/game-launcher:browser"))
 
