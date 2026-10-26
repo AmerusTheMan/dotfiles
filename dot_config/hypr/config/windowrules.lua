@@ -29,6 +29,7 @@ hl.window_rule({
 hl.window_rule({ match = { content = "game" }, workspace = gamingWorkspace })
 hl.window_rule({ match = { class = gamingApps }, workspace = gamingWorkspace })
 hl.window_rule({ match = { class = "^(steam)$", title = "^(Friends List)$" }, float = true })
+hl.window_rule({ match = { class = "^(steam)$", title = "^(Steam Settings)$" }, float = true, center = true })
 hl.window_rule({ match = { class = "^(steam)$", title = "^(Launching\\.{3})$" }, float = true, center = true, workspace = gamingWorkspace })
 hl.window_rule({
     match = {
@@ -37,9 +38,10 @@ hl.window_rule({
         initial_title = "negative:^(.*\\\\home\\\\.*)$",
     },
     content          = "game",
+    float            = true,
     decorate         = false,
-    fullscreen_state = 2,
-    size             = { "monitor_w", "monitor_h" },
+    fullscreen_state = 0,
+--    size             = { "monitor_w", "monitor_h" },
     sync_fullscreen  = true,
 })
 hl.window_rule({
@@ -58,6 +60,7 @@ hl.window_rule({
 
 
 -- Apps
+hl.window_rule({ match = { title = "osu!"}, monitor = PRIMARY_MONITOR, float = true, size = {"1920", "1080"}})
 hl.window_rule({
     match = { class = "^(com\\.obsproject\\.Studio)$" },
     workspace = obsWorkspace
@@ -88,7 +91,7 @@ hl.window_rule({
 })
 
 -- Opacity Overrides
-
+hl.window_rule({ match = { float = true }, opacity = "1.0 override 1.0" })
 hl.window_rule({ match = { class = text_editors}, opacity = "1 override 1.0"})
 hl.window_rule({ match = { class = "^(firefox|zen)$" }, opacity = "1.0 override" })
 hl.window_rule({ match = { class = terminals }, opacity = "1.0 override" }) -- Override opacity in favor of terminal settings for opacity. If your terminal doesn't support transparency, you can remove this rule.
