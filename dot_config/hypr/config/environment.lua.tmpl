@@ -9,8 +9,16 @@
     hl.env("__GL_GSYNC_ALLOWED", "1") -- Controls if G-Sync capable monitors should use Variable Refresh Rate (VRR)
 {{end}}
 
+cursor_theme = "Bibata-Modern-Classic"
+cursor_size = "23"
+
 hl.env("QT_QPA_PLATFORMTHEME", "kde")
-hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
-hl.env("HYPRCURSOR_SIZE", "24")
+
+hl.env("HYPRCURSOR_THEME", cursor_theme)
+hl.env("HYPRCURSOR_SIZE", cursor_size)
+
+hl.env("XCURSOR_THEME", cursor_theme)
+hl.env("XCURSOR_SIZE", cursor_size)
+
 hl.env("XDG_MENU_PREFIX", "arch-")
 
