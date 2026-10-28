@@ -20,9 +20,9 @@
             "format": "\u001b[90m┌──────────────────────Hardware─────────────────────┐"
         },
         {
-            "type": "host",
+            "type": "title",
             "key": "  ›  Computer\t\t",
-            "format": "HP ProBook 440 G8"
+            "format": "{host-name}"
         },
         {
             "type": "cpu",
