@@ -13,7 +13,7 @@ layer              = "top"       # top | overlay; overlay appears above fullscre
 
 thickness          = 34          # bar cross-axis size in pixels (height for horizontal, width for vertical)
 background_opacity = 1         # 0.0 (transparent) to 1.0 (opaque)
-border             = "outline"   # color role or #RRGGBB for the bar outline
+border             = "outline_variant"   # color role or #RRGGBB for the bar outline
 border_width       = 0.0         # inside outline width in pixels; 0 disables it
 shadow             = true        # cast the global [shell.shadow]
 contact_shadow     = false       # dark gradient between an attached panel and the bar (depth at the seam)
