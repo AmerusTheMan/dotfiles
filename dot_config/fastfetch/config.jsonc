@@ -1,6 +1,7 @@
 {
     "logo": {
-        "type": "small",
+        "type": "file",
+        "source": "~/.config/fastfetch/cachy-logo.txt",
         "height": 15,
         "width": 30,
         "padding": {
@@ -21,7 +22,7 @@
         },
         {
             "type": "title",
-            "key": "  ›  Computer\t\t",
+            "key": "  ›  Host\t\t",
             "format": "{host-name}"
         },
         {
