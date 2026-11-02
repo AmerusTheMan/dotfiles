@@ -41,6 +41,6 @@ hl.config({
             size = 5,
             passes = 2,
             special = true,
-        },
+        },        
     },
 })
