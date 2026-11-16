@@ -1,7 +1,7 @@
 [shell]
 corner_radius_scale = 1 # default: 1.0
 screen_time_enabled = true
-app_icon_colorize   = false
+colorize_icons      = false
 clipboard_history_max_entries = 20
 polkit_agent        = true
 password_style      = "default"
