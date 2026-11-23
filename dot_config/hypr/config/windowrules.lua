@@ -65,6 +65,7 @@ hl.window_rule({
     match = { class = "^(com\\.obsproject\\.Studio)$" },
     workspace = obsWorkspace
 })
+hl.window_rule({ match = { class = "bitwarden"}, float = true, size = { "600", "600" }, move = { "monitor_w-window_w", "0" } })
 
 
 
