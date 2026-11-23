@@ -31,7 +31,7 @@ backend = "ddcutil"
 
 [idle]
 # Canonical evaluation order for named behaviors. Names not listed are appended.
-behavior_order = ["lock", "screen-off", "suspend"]
+behavior_order = ["lock", "screen-off"]
 # Seconds to fade a fullscreen surface-tint overlay, then run the idle command.
 # 0 disables the overlay (the command runs as soon as the compositor reports idle).
 # Parsed between 0 and 120; the in-app Settings stepper uses whole seconds 0–30.
@@ -47,9 +47,6 @@ timeout = 600
 action = "screen_off"       # turns monitors off, and back on when you return
 enabled = true             # explicitly disabled in the default config
 
-[idle.behavior.suspend]
-timeout = 900
-action = "lock_and_suspend" # or action = "suspend" with lock_before_suspend = false
 
 
 [nightlight]
