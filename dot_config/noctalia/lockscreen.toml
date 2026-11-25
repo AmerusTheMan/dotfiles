@@ -1,5 +1,6 @@
 [lockscreen]
 blurred_desktop = false
+grace_period_seconds = 5
 
 [lockscreen_widgets]
 enabled = true

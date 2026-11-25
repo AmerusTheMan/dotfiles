@@ -35,7 +35,6 @@ behavior_order = ["lock", "screen-off"]
 # Seconds to fade a fullscreen surface-tint overlay, then run the idle command.
 # 0 disables the overlay (the command runs as soon as the compositor reports idle).
 # Parsed between 0 and 120; the in-app Settings stepper uses whole seconds 0–30.
-pre_action_fade_seconds = 5.0
 
 [idle.behavior.lock]
 timeout = 300
